@@ -13,7 +13,7 @@ int main(void)
 	printf("Username: ");
 	scanf("%s", &cUserName);
 
-	printf("Username: %s\n", cUserName);
+	printf("Hello! %s\n", cUserName);
 
 	return 0;
 }
