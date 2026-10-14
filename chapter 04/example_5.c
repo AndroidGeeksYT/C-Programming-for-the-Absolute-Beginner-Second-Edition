@@ -2,19 +2,13 @@
 
 int main(void)
 {
-	int iSelection = 0;
+	int x = 0;
 
 	do {
-		printf("1\tDeposit funds\n");
-		printf("2\tWithdraw funds");
-		printf("3\tPrint balance\n");
-		printf("4\tQuit\n");
-		printf("Enter your selection (1-4): ");
-		scanf("%d", &iSelection);
+		printf("The value of x is %d\n", x);
+		x++;
 
-	}while ( iSelection != 4 ); //end do while loop
-
-	printf("\nThank you\n");
+	}while ( x < 10 ); //end do while loop
 
 	return 0;
 } //end main function
