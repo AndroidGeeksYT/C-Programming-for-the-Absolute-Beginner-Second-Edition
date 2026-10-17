@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	int iTemperature = 0;
+	int iTemperature;
 
-	if ( iTemperature >= 0 ) {
+	if ( iTemperature >= 80 ) {
 		printf("Turn AC On\n");
 	}
 	else {
