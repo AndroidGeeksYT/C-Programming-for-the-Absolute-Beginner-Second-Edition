@@ -28,9 +28,17 @@ int main(void)
 		printf("\nNew Balance: $%.2f\n", fDeposit + fBalance);
 	}
 	else {
+		if ( fBalance < fWithdraw) {
 		printf("Enter amount to withdraw: ");
 		scanf("%f", &fWithdraw);
+		printf("\nInsufficient funds for transaction\n");
+		}
+		else {
+			printf("Enter amount to withdraw: ");
+		scanf("%f", &fWithdraw);
 		printf("\nNew Balance: $%.2f\n", fBalance - fWithdraw);
+	
+		} //end nested if
 	} //end if
 
 	return 0;
